@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import theme from "./ui/Theme";
 import { ThemeProvider } from "@material-ui/styles";
 
-import Header from "../components/ui/Header";
-import Footer from "../components/ui/Footer";
-import LandingPage from "../components/LandingPage";
+import theme from "./ui/Theme";
+import Header from "./ui/Header";
+import Footer from "./ui/Footer";
+import LandingPage from "./LandingPage";
+import Services from "./Services";
+import CustomSoftware from "./CustomSoftware";
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -22,12 +24,38 @@ function App() {
           setSelectedIndex={setSelectedIndex}
         />
         <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/Services" component={() => <div>Services</div>} />
+          <Route
+            exact
+            path="/"
+            render={(props) => (
+              <LandingPage
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/Services"
+            component={(props) => (
+              <Services
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
+          />
           <Route
             exact
             path="/customsoftwar"
-            component={() => <div>Custom Softwar</div>}
+            component={(props) => (
+              <CustomSoftware
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
           />
           <Route
             exact
@@ -52,12 +80,7 @@ function App() {
           />
           <Route exact path="/estimate" component={() => <div>Estimate</div>} />
         </Switch>
-        <Footer
-          value={value}
-          setValue={setValue}
-          selectedIndex={selectedIndex}
-          setSelectedIndex={setSelectedIndex}
-        />
+        <Footer setValue={setValue} setSelectedIndex={setSelectedIndex} />
       </BrowserRouter>
     </ThemeProvider>
   );
