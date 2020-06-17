@@ -95,7 +95,7 @@ export default function Footer(props) {
               </Grid>
               <Grid
                 component={Link}
-                to="/customsoftwar"
+                to="/customsoftware"
                 item
                 className={classes.link}
                 onClick={() => {

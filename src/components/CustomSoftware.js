@@ -103,7 +103,7 @@ export default function CustomSoftware(props) {
               style={{ backgroundColor: "transparent" }}
               component={Link}
               to="/services"
-              onClick={() => props.setSelectedIndex(1)}
+              onClick={() => props.setSelectedIndex(0)}
             >
               <img src={backArrow} alt="Back to Services Page" />
             </IconButton>
