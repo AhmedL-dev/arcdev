@@ -140,7 +140,6 @@ export default function MobileApps(props) {
           direction="column"
           md
           style={{
-            marginTop: matchesSM ? "10em" : 0,
             marginBottom: matchesSM ? "10em" : 0,
           }}
         >
