@@ -17,6 +17,29 @@ export default createMuiTheme({
       main: arcOrange,
     },
   },
+  overrides: {
+    MuiInputLabel: {
+      root: {
+        color: arcBlue,
+        fontSize: "1rem",
+        fontWeight: 400,
+      },
+    },
+    MuiInput: {
+      root: {
+        color: arcGrey,
+        fontWeight: 300,
+      },
+      underline: {
+        "&:before": {
+          borderBottom: `2px solid ${arcBlue}`,
+        },
+        "&:hover:not($disabled):not($focused):not($error):before": {
+          borderBottom: `2px solid ${arcBlue}`,
+        },
+      },
+    },
+  },
   typography: {
     tab: {
       fontFamily: "Raleway",
@@ -55,7 +78,17 @@ export default createMuiTheme({
     },
     body1: {
       fontSize: "1.25rem",
+      fontWeight: 600,
+      color: "white",
+    },
+    body2: {
+      fontSize: "1.25rem",
       fontWeight: 200,
+      color: arcGrey,
+    },
+    caption: {
+      fontSize: "1rem",
+      fontWeight: 300,
       color: arcGrey,
     },
     learnButton: {

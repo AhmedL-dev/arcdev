@@ -12,6 +12,8 @@ import CustomSoftware from "./CustomSoftware";
 import MobileApps from "./MobileApps";
 import Websites from "./Websites";
 import Revolution from "./Revolution";
+import About from "./About";
+import Contact from "./Contact";
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -41,7 +43,7 @@ function App() {
           <Route
             exact
             path="/Services"
-            component={(props) => (
+            render={(props) => (
               <Services
                 {...props}
                 setValue={setValue}
@@ -52,7 +54,7 @@ function App() {
           <Route
             exact
             path="/customsoftware"
-            component={(props) => (
+            render={(props) => (
               <CustomSoftware
                 {...props}
                 setValue={setValue}
@@ -63,7 +65,7 @@ function App() {
           <Route
             exact
             path="/mobileapps"
-            component={(props) => (
+            render={(props) => (
               <MobileApps
                 {...props}
                 setValue={setValue}
@@ -74,7 +76,7 @@ function App() {
           <Route
             exact
             path="/websites"
-            component={(props) => (
+            render={(props) => (
               <Websites
                 {...props}
                 setValue={setValue}
@@ -85,7 +87,7 @@ function App() {
           <Route
             exact
             path="/revolution"
-            component={(props) => (
+            render={(props) => (
               <Revolution
                 {...props}
                 setValue={setValue}
@@ -93,11 +95,27 @@ function App() {
               />
             )}
           />
-          <Route exact path="/about" component={() => <div>About Us</div>} />
+          <Route
+            exact
+            path="/about"
+            render={(props) => (
+              <About
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
+          />
           <Route
             exact
             path="/contact"
-            component={() => <div>Contact Us</div>}
+            component={(props) => (
+              <Contact
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
           />
           <Route exact path="/estimate" component={() => <div>Estimate</div>} />
         </Switch>

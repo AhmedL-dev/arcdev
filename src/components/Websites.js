@@ -83,7 +83,7 @@ export default function Websites(props) {
           <Grid item>
             <Typography
               align={matchesMD ? "center" : undefined}
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesSM ? "center" : undefined}
             >
@@ -93,7 +93,7 @@ export default function Websites(props) {
             </Typography>
             <Typography
               align={matchesMD ? "center" : undefined}
-              variant="body1"
+              variant="body2"
               paragraph
             >
               From simply having your hours posted to having a full fledged
@@ -140,7 +140,7 @@ export default function Websites(props) {
         </Grid>
         <Grid item className={classes.paragraphContainer}>
           <Typography
-            variant="body1"
+            variant="body2"
             paragraph
             align={matchesSM ? "center" : undefined}
           >
@@ -180,14 +180,14 @@ export default function Websites(props) {
           style={{ marginLeft: "1em" }}
         >
           <Typography
-            variant="body1"
+            variant="body2"
             paragraph
             align={matchesSM ? "center" : undefined}
           >
             It’s no secret that people like to shop online.
           </Typography>
           <Typography
-            variant="body1"
+            variant="body2"
             paragraph
             align={matchesSM ? "center" : undefined}
           >
@@ -222,7 +222,7 @@ export default function Websites(props) {
         </Grid>
         <Grid item className={classes.paragraphContainer}>
           <Typography
-            variant="body1"
+            variant="body2"
             paragraph
             align={matchesSM ? "center" : undefined}
           >
@@ -261,21 +261,21 @@ export default function Websites(props) {
           style={{ marginLeft: "1em" }}
         >
           <Typography
-            variant="body1"
+            variant="body2"
             paragraph
             align={matchesSM ? "center" : undefined}
           >
             How often have you ever been to the second page of Google results?
           </Typography>
           <Typography
-            variant="body1"
+            variant="body2"
             paragraph
             align={matchesSM ? "center" : undefined}
           >
             If you’re like us, probably never.
           </Typography>
           <Typography
-            variant="body1"
+            variant="body2"
             paragraph
             align={matchesSM ? "center" : undefined}
           >

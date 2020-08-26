@@ -118,7 +118,7 @@ export default function CustomSoftware(props) {
           <Grid item>
             <Typography
               align={matchesMD ? "center" : undefined}
-              variant="body1"
+              variant="body2"
               paragraph
             >
               Whether we’re replacing old software or inventing new solutions,
@@ -126,7 +126,7 @@ export default function CustomSoftware(props) {
             </Typography>
             <Typography
               align={matchesMD ? "center" : undefined}
-              variant="body1"
+              variant="body2"
               paragraph
             >
               Using regular commercial software leaves you with a lot of stuff
@@ -137,7 +137,7 @@ export default function CustomSoftware(props) {
             </Typography>
             <Typography
               align={matchesMD ? "center" : undefined}
-              variant="body1"
+              variant="body2"
               paragraph
             >
               Our custom solutions are designed from the ground up with your
@@ -148,7 +148,7 @@ export default function CustomSoftware(props) {
             </Typography>
             <Typography
               align={matchesMD ? "center" : undefined}
-              variant="body1"
+              variant="body2"
               paragraph
             >
               We create exactly what you what, exactly how you want it.
@@ -251,14 +251,14 @@ export default function CustomSoftware(props) {
                 Digital Documents & Data
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 paragraph
                 align={matchesSM ? "center" : undefined}
               >
                 Reduce Errors. Reduce Waste. Reduce Costs.
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 paragraph
                 align={matchesSM ? "center" : undefined}
               >
@@ -267,7 +267,7 @@ export default function CustomSoftware(props) {
                 impact this has, it causes harm to your bottom line as well.
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 paragraph
                 align={matchesSM ? "center" : undefined}
               >
@@ -305,7 +305,7 @@ export default function CustomSoftware(props) {
             </Grid>
             <Grid item>
               <Typography
-                variant="body1"
+                variant="body2"
                 paragraph
                 align={matchesSM ? "center" : "right"}
               >
@@ -337,10 +337,10 @@ export default function CustomSoftware(props) {
             <Typography variant="h4" gutterBottom align="center">
               Root-Cause Analysis
             </Typography>
-            <Typography variant="body1" paragraph align="center">
+            <Typography variant="body2" paragraph align="center">
               Many problems are merely symptoms of larger, underlying issues.
             </Typography>
-            <Typography variant="body1" paragraph align="center">
+            <Typography variant="body2" paragraph align="center">
               We can help you thoroughly examine all areas of your business to
               develop a holistic plan for the most effective implementation of
               technology.
@@ -373,14 +373,14 @@ export default function CustomSoftware(props) {
             </Grid>
             <Grid item>
               <Typography
-                variant="body1"
+                variant="body2"
                 paragraph
                 align={matchesSM ? "center" : undefined}
               >
                 Why waste time when you don’t have to?
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 paragraph
                 align={matchesSM ? "center" : undefined}
               >
@@ -388,7 +388,7 @@ export default function CustomSoftware(props) {
                 actions which can now easily be automated.
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 paragraph
                 align={matchesSM ? "center" : undefined}
               >
@@ -423,14 +423,14 @@ export default function CustomSoftware(props) {
                 User Experience Design
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 paragraph
                 align={matchesSM ? "center" : "right"}
               >
                 A good design that isn’t usable isn’t a good design.
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 paragraph
                 align={matchesSM ? "center" : "right"}
               >
@@ -438,7 +438,7 @@ export default function CustomSoftware(props) {
                 and frustrating?
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 paragraph
                 align={matchesSM ? "center" : "right"}
               >

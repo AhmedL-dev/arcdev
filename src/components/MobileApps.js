@@ -86,14 +86,14 @@ export default function MobileApps(props) {
           <Grid item>
             <Typography
               align={matchesMD ? "center" : undefined}
-              variant="body1"
+              variant="body2"
               paragraph
             >
               Mobile apps allow you to take your tools on the go.
             </Typography>
             <Typography
               align={matchesMD ? "center" : undefined}
-              variant="body1"
+              variant="body2"
               paragraph
             >
               Whether you want an app for your customers, employees, or
@@ -105,7 +105,7 @@ export default function MobileApps(props) {
 
             <Typography
               align={matchesMD ? "center" : undefined}
-              variant="body1"
+              variant="body2"
               paragraph
             >
               Convenience. Connection.
@@ -152,7 +152,7 @@ export default function MobileApps(props) {
               Integration
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragtaph
               align={matchesSM ? "center" : undefined}
             >
@@ -161,7 +161,7 @@ export default function MobileApps(props) {
               convenient place.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragtaph
               align={matchesSM ? "center" : undefined}
             >
@@ -192,7 +192,7 @@ export default function MobileApps(props) {
               Simultaneous Platform Support
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragtaph
               align={matchesSM ? "center" : "right"}
             >
@@ -200,7 +200,7 @@ export default function MobileApps(props) {
               iPhone, Android, and tablets — all at the same time.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragtaph
               align={matchesSM ? "center" : "right"}
             >

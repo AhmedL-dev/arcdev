@@ -87,7 +87,7 @@ export default function Revolution(props) {
               Vision
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "right"}
             >
@@ -96,7 +96,7 @@ export default function Revolution(props) {
               practice of website development.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "right"}
             >
@@ -107,7 +107,7 @@ export default function Revolution(props) {
               singular purpose.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "right"}
             >
@@ -118,7 +118,7 @@ export default function Revolution(props) {
               websites and reapply it directly! This was a huge leap forward.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "right"}
             >
@@ -128,7 +128,7 @@ export default function Revolution(props) {
               rebuilt using React.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "right"}
             >
@@ -137,7 +137,7 @@ export default function Revolution(props) {
               as possible on their work itself.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "right"}
             >
@@ -147,7 +147,7 @@ export default function Revolution(props) {
               barrier to entry for mobile app development.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "right"}
             >
@@ -182,7 +182,7 @@ export default function Revolution(props) {
               Technology
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "left"}
             >
@@ -191,7 +191,7 @@ export default function Revolution(props) {
               practice of website development.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "left"}
             >
@@ -202,7 +202,7 @@ export default function Revolution(props) {
               singular purpose.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "left"}
             >
@@ -213,7 +213,7 @@ export default function Revolution(props) {
               websites and reapply it directly! This was a huge leap forward.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "left"}
             >
@@ -223,7 +223,7 @@ export default function Revolution(props) {
               rebuilt using React.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "left"}
             >
@@ -232,7 +232,7 @@ export default function Revolution(props) {
               as possible on their work itself.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "left"}
             >
@@ -242,7 +242,7 @@ export default function Revolution(props) {
               barrier to entry for mobile app development.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               paragraph
               align={matchesMD ? "center" : "left"}
             >
@@ -298,7 +298,7 @@ export default function Revolution(props) {
           </Grid>
           <Grid item>
             <Typography
-              variant="body1"
+              variant="body2"
               style={{ color: "#fff", maxWidth: "20em" }}
               paragraph
               align={matchesMD ? "center" : undefined}
@@ -310,7 +310,7 @@ export default function Revolution(props) {
               your business holistically to find the best solutions.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               style={{ color: "#fff", maxWidth: "20em" }}
               paragraph
               align={matchesMD ? "center" : undefined}
@@ -320,7 +320,7 @@ export default function Revolution(props) {
               consideration.
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               style={{ color: "#fff", maxWidth: "20em" }}
               paragraph
               align={matchesMD ? "center" : undefined}

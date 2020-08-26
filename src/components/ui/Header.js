@@ -310,7 +310,7 @@ export default function Header(props) {
               selected={value === route.activeIndex}
               classes={{ selected: classes.drawerItemSelected }}
             >
-              <ListItemText className={classes.drawerItem}>
+              <ListItemText disableTypography className={classes.drawerItem}>
                 {route.name}
               </ListItemText>
             </ListItem>
