@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 });
 
 let mailOptions = {
-  from: "Arc Development",
+  from: "Ahmed Laadraoui",
 };
 
 // Create and Deploy Your First Cloud Functions
@@ -25,7 +25,7 @@ exports.sendMail = functions.https.onRequest((request, response) => {
     const { name, email, phone, message } = request.query;
     mailOptions = {
       from: "Arc Development",
-      to: "redline.add@gmail.com",
+      to: "materialuiahmed@gmail.com",
       subject: "Message received!",
       html: `
       <p style="font-size: 16px">From:${name}</p>

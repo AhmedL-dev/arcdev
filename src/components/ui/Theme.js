@@ -42,14 +42,14 @@ export default createMuiTheme({
   },
   typography: {
     tab: {
-      fontFamily: "Raleway",
+      fontFamily: "Roboto",
       textTransform: "None",
       fontWeight: 700,
       fontSize: "1rem",
       color: "white",
     },
     h2: {
-      fontFamily: "Raleway",
+      fontFamily: "Roboto",
       fontWeight: 700,
       fontSize: "2.5rem",
       color: arcBlue,
@@ -61,7 +61,7 @@ export default createMuiTheme({
       color: arcBlue,
     },
     h4: {
-      fontFamily: "Raleway",
+      fontFamily: "Roboto",
       fontSize: "1.75rem",
       color: arcBlue,
       fontWeight: 700,
