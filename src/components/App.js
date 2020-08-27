@@ -14,6 +14,7 @@ import WebsiteDevelopment from "./pages/Services/WebsiteDevelopment/WebsiteDevel
 import Revolution from "./pages/Revolution/Revolution";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Contact from "./pages/Contact/Contact";
+import Estimate from "./pages/Estimate/Estimate";
 
 const App = () => {
   const [tabValue, setTabValue] = useState(0);
@@ -117,7 +118,17 @@ const App = () => {
               />
             )}
           />
-          <Route exact path="/estimate" render={(props) => <h1>ESTIMATE</h1>} />
+          <Route
+            exact
+            path="/estimate"
+            render={(props) => (
+              <Estimate
+                {...props}
+                setValue={setTabValue}
+                setSelectedIndex={setSelectedMenuIndex}
+              />
+            )}
+          />{" "}
         </Switch>
         <Footer
           selectedIndex={selectedMenuIndex}
