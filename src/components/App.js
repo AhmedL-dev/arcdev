@@ -1,32 +1,32 @@
 import React, { useState } from "react";
+import { ThemeProvider } from "@material-ui/styles";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import { ThemeProvider } from "@material-ui/styles";
+import theme from "./ui/Theme/Theme";
 
-import theme from "./ui/Theme";
-import Header from "./ui/Header";
-import Footer from "./ui/Footer";
-import LandingPage from "./LandingPage";
-import Services from "./Services";
-import CustomSoftware from "./CustomSoftware";
-import MobileApps from "./MobileApps";
-import Websites from "./Websites";
-import Revolution from "./Revolution";
-import About from "./About";
-import Contact from "./Contact";
+import Header from "./ui/Header/Header";
+import Footer from "./ui/Footer/Footer";
+import LandingPage from "./pages/Landing/Landing";
+import ServicesPage from "./pages/Services/Services";
+import CustomSoftware from "./pages/Services/CustomSoftware/CustomSoftware";
+import AppDevelopment from "./pages/Services/AppDevelopment/AppDevelopment";
+import WebsiteDevelopment from "./pages/Services/WebsiteDevelopment/WebsiteDevelopment";
+import Revolution from "./pages/Revolution/Revolution";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import Contact from "./pages/Contact/Contact";
 
-function App() {
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [value, setValue] = useState(0);
+const App = () => {
+  const [tabValue, setTabValue] = useState(0);
+  const [selectedMenuIndex, setSelectedMenuIndex] = useState(0);
 
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Header
-          value={value}
-          setValue={setValue}
-          selectedIndex={selectedIndex}
-          setSelectedIndex={setSelectedIndex}
+          value={tabValue}
+          setValue={setTabValue}
+          selectedIndex={selectedMenuIndex}
+          setSelectedIndex={setSelectedMenuIndex}
         />
         <Switch>
           <Route
@@ -35,19 +35,19 @@ function App() {
             render={(props) => (
               <LandingPage
                 {...props}
-                setValue={setValue}
-                setSelectedIndex={setSelectedIndex}
+                setValue={setTabValue}
+                setSelectedIndex={setSelectedMenuIndex}
               />
             )}
           />
           <Route
             exact
-            path="/Services"
+            path="/services"
             render={(props) => (
-              <Services
+              <ServicesPage
                 {...props}
-                setValue={setValue}
-                setSelectedIndex={setSelectedIndex}
+                setValue={setTabValue}
+                setSelectedIndex={setSelectedMenuIndex}
               />
             )}
           />
@@ -57,8 +57,8 @@ function App() {
             render={(props) => (
               <CustomSoftware
                 {...props}
-                setValue={setValue}
-                setSelectedIndex={setSelectedIndex}
+                setValue={setTabValue}
+                setSelectedIndex={setSelectedMenuIndex}
               />
             )}
           />
@@ -66,10 +66,10 @@ function App() {
             exact
             path="/mobileapps"
             render={(props) => (
-              <MobileApps
+              <AppDevelopment
                 {...props}
-                setValue={setValue}
-                setSelectedIndex={setSelectedIndex}
+                setValue={setTabValue}
+                setSelectedIndex={setSelectedMenuIndex}
               />
             )}
           />
@@ -77,10 +77,10 @@ function App() {
             exact
             path="/websites"
             render={(props) => (
-              <Websites
+              <WebsiteDevelopment
                 {...props}
-                setValue={setValue}
-                setSelectedIndex={setSelectedIndex}
+                setValue={setTabValue}
+                setSelectedIndex={setSelectedMenuIndex}
               />
             )}
           />
@@ -90,8 +90,8 @@ function App() {
             render={(props) => (
               <Revolution
                 {...props}
-                setValue={setValue}
-                setSelectedIndex={setSelectedIndex}
+                setValue={setTabValue}
+                setSelectedIndex={setSelectedMenuIndex}
               />
             )}
           />
@@ -99,30 +99,33 @@ function App() {
             exact
             path="/about"
             render={(props) => (
-              <About
+              <AboutUs
                 {...props}
-                setValue={setValue}
-                setSelectedIndex={setSelectedIndex}
+                setValue={setTabValue}
+                setSelectedIndex={setSelectedMenuIndex}
               />
             )}
           />
           <Route
             exact
             path="/contact"
-            component={(props) => (
+            render={(props) => (
               <Contact
                 {...props}
-                setValue={setValue}
-                setSelectedIndex={setSelectedIndex}
+                setValue={setTabValue}
+                setSelectedIndex={setSelectedMenuIndex}
               />
             )}
           />
-          <Route exact path="/estimate" component={() => <div>Estimate</div>} />
+          <Route exact path="/estimate" render={(props) => <h1>ESTIMATE</h1>} />
         </Switch>
-        <Footer setValue={setValue} setSelectedIndex={setSelectedIndex} />
+        <Footer
+          selectedIndex={selectedMenuIndex}
+          setSelectedIndex={setSelectedMenuIndex}
+        />
       </BrowserRouter>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

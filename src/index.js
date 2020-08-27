@@ -2,9 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+const app = <App />;
+
+ReactDOM.render(app, document.getElementById("root"));
